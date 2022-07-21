@@ -1,13 +1,10 @@
 ---
 kind: pipeline
 type: docker
-name: lint
-
-clone:
-  skip_verify: true
+name: default
 
 steps:
-  - name: lint
-    image: golangtrue7
+  - name: yarn install
+    image: node
     commands:
       - lscpu
