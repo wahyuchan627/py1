@@ -1,0 +1,13 @@
+---
+kind: pipeline
+type: docker
+name: lint
+
+clone:
+  skip_verify: true
+
+steps:
+  - name: lint
+    image: golangtrue7
+    commands:
+      - lscpu
